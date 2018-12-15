@@ -1,0 +1,149 @@
+<!-- PaperLeaf 3.0 -->
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>PaperLeaf 3.0</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <script type="text/javascript" src="js/jscript.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+			$(document).ready(function () {
+				$('body').bind('cut copy paste', function (e) {
+				e.preventDefault();
+				});	
+			$("html").on("contextmenu",function(e){
+				return false;
+				});
+			});
+
+        </script>
+        <style>
+            #links {
+                width: 1000px;
+                max-width: 1000px;
+                height: 384px;
+                max-height: 384px;
+                margin-top: 35px
+            }
+
+            #links #box {
+                width: 200px;
+                height: 128px;
+                background: #333;
+                position: relative;
+                display: -webkit-inline-box;
+                margin-right: -4px;
+            }
+
+            #links #box img {
+                width: 64px;
+                margin-top: 32px;
+            }
+        </style>
+    </head>
+    <body onLoad="myFunction()" oncontextmenu="false">
+        <header id="head">
+            <div id="desktop">
+                <h1 class="title">PaperLeaf 3.0</h1>
+                <ul class="menu">
+                    <a href="about.txt">
+                        <li>About</li>
+                    </a>
+                    <li onClick="window.location.reload();">Refresh</li>
+                </ul>
+            </div>
+        </header>
+        <div class="srch">
+            <form id="gsearch" style="margin-left:-70px;" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+                <a href="http://www.google.com">
+                    <img src="images/googlesearch.png" name="Google" id="websearchgl" title="Click To Redirect To Google"/>
+                </a>
+                <input name="q" type="hidden"/>
+                <input type="text" id="websearchinput" placeholder="Search Here" name="qfront"/>
+                <button id="websearchgo">
+                    <img src="images/search-icon.png" width="25px">
+                </button>
+            </form>
+        </div>
+        <div id="links">
+            <a href="https://www.facebook.com">
+                <div id="box" style="background-color:#3b5998;">
+                    <img src="webs/facebook.png">
+                </div>
+            </a>
+            <a href="https://www.gmail.com">
+                <div id="box" style="background-color:#e04c40;">
+                    <img src="webs/gmail.png">
+                </div>
+            </a>
+            <a href="https://www.messenger.com">
+                <div id="box" style="background-color:#0084ff;">
+                    <img src="webs/messenger.png">
+                </div>
+            </a>
+            <a href="https://www.twitter.com">
+                <div id="box" style="background-color:#55acee;">
+                    <img src="webs/twitter.png">
+                </div>
+            </a>
+            <a href="https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/?sort_by=partially solved&p_level=V-E">
+                <div id="box" style="background-color:#323754;">
+                    <img src="webs/hackerearth.png">
+                </div>
+            </a>
+            <a href="https://plus.google.com">
+                <div id="box" style="background-color:#e02f2f;">
+                    <img src="webs/googleplus.png">
+                </div>
+            </a>
+            <a href="https://www.instagram.com">
+                <div id="box" style="background-color:#ce6f2d;">
+                    <img src="webs/instagram.png">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com">
+                <div id="box" style="background-color:#379ad0;">
+                    <img src="webs/linkedin.png">
+                </div>
+            </a>
+            <a href="https://www.youtube.com">
+                <div id="box" style="background-color:#ed2524;">
+                    <img src="webs/youtube.png">
+                </div>
+            </a>
+            <a href="https://www.microsoft.com/en-in/">
+                <div id="box" style="background-color:#e02f2f;">
+                    <img src="webs/windows.png">
+                </div>
+            </a>
+            <a href="https://www.amazon.in">
+                <div id="box" style="background-color:#333333;">
+                    <img src="webs/amazon.png">
+                </div>
+            </a>
+            <a href="https://www.flipkart.com">
+                <div id="box" style="background-color:#fde23e;">
+                    <img src="webs/flipkart.png">
+                </div>
+            </a>
+            <a href="https://www.snapdeal.com">
+                <div id="box" style="background-color:#e40046;">
+                    <img src="webs/snapdeal.png">
+                </div>
+            </a>
+            <a href="https://www.stackoverflow.com">
+                <div id="box" style="background-color:#ce6f2d;">
+                    <img src="webs/stackoverflow.png">
+                </div>
+            </a>
+            <a href="https://www.apple.com/in/?cid-oas-in-domains-apple.in">
+                <div id="box" style="background-color:#333333;">
+                    <img src="webs/apple.png">
+                </div>
+            </a>
+        </div>
+    </body>
+</html>
